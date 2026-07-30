@@ -8,7 +8,8 @@ import { Employee } from './employee';
 })
 export class EmployeeService {
 
-  private baseURL = "http://localhost:8080/api/v1/employees";
+  private baseURL =
+  "https://employeewebapp-fvcwd0d0d0dgevf5.centralindia-01.azurewebsites.net/api/employees";
 
   constructor(private httpClient: HttpClient) { }
   
