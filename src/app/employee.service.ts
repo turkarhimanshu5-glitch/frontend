@@ -10,8 +10,6 @@ export class EmployeeService {
 
   private baseURL =
   "https://employeewebapp-fvcwd0d0d0dgevf5.centralindia-01.azurewebsites.net/api/employees";
-
-  constructor(private httpClient: HttpClient) { }
   
   getEmployeesList(): Observable<Employee[]>{
     return this.httpClient.get<Employee[]>(`${this.baseURL}`);
